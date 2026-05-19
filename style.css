@@ -1,40 +1,65 @@
 body {
-  background: #111;
-  color: white;
-  font-family: Arial;
   margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
 }
 
 .hero {
-  text-align: center;
-  padding-top: 100px;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background: #111;
 }
 
-h1 {
-  color: orange;
-  font-size: 60px;
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
 }
 
-button {
-  background: red;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 20px;
-  cursor: pointer;
+.hero-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .flyer {
-  width: 350px;
+  width: 400px;
   max-width: 90%;
+
   border-radius: 20px;
 
   box-shadow:
     0 0 20px rgba(255,0,0,0.5),
     0 0 40px rgba(255,165,0,0.3);
-
-  transition: 0.3s;
 }
 
-.flyer:hover {
-  transform: scale(1.03);
+button {
+  margin-top: 20px;
+
+  background: red;
+  color: white;
+
+  border: none;
+
+  padding: 18px 40px;
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  border-radius: 10px;
+}
+
+button:hover {
+  background: orange;
 }
