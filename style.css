@@ -78,9 +78,27 @@ body{
 
     border-radius:12px;
 
-    box-shadow:0 0 15px rgba(255,165,0,.2);
+    border:2px solid orange;
+
+    box-shadow:0 0 15px rgba(255,165,0,.25);
 
     text-align:center;
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:0 0 25px rgba(255,165,0,.5);
+}
+
+.card h2{
+    color:orange;
+}
+
+.card p{
+    color:#cccccc;
 }
 
 .card h2{
