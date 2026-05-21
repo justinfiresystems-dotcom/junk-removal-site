@@ -141,3 +141,22 @@ body{
         max-width:300px;
     }
 }
+.contact-email{
+    margin-top:20px;
+
+    font-size:1.1rem;
+
+    color:#ccc;
+}
+
+.contact-email a{
+    color:orange;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.contact-email a:hover{
+    text-decoration:underline;
+}
