@@ -1,61 +1,62 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0d0d0d;
-  color: white;
+body{
+    margin:0;
+    background:#111;
+    color:white;
+    font-family:Arial,sans-serif;
 }
 
-.hero {
-  height: 100vh;
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    min-height:100vh;
 
-  position: relative;
-
-  background: #111;
+    padding:40px;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
+.hero-text{
+    max-width:500px;
 }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero-text h1{
+    color:orange;
+    font-size:4rem;
+    margin-bottom:20px;
 }
 
-.flyer {
-    max-width: 400px;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255,165,0,.4);
+.hero-text p{
+    font-size:1.2rem;
+    line-height:1.6;
 }
 
-button {
-  margin-top: 20px;
+.btn{
+    display:inline-block;
 
-  background: red;
-  color: white;
+    margin-top:20px;
 
-  border: none;
+    background:red;
+    color:white;
 
-  padding: 18px 40px;
+    text-decoration:none;
 
-  font-size: 20px;
+    padding:15px 30px;
 
-  cursor: pointer;
+    border-radius:8px;
 
-  border-radius: 10px;
+    font-weight:bold;
 }
 
-button:hover {
-  background: orange;
+.btn:hover{
+    background:orange;
+}
+
+.flyer{
+    max-width:400px;
+    width:100%;
+
+    border-radius:12px;
+
+    box-shadow:0 0 25px rgba(255,165,0,.4);
 }
