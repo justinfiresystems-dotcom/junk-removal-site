@@ -5,6 +5,8 @@ body{
     font-family:Arial,sans-serif;
 }
 
+/* HERO SECTION */
+
 .hero{
     display:flex;
     justify-content:center;
@@ -29,6 +31,7 @@ body{
 .hero-text p{
     font-size:1.2rem;
     line-height:1.6;
+    color:#ccc;
 }
 
 .btn{
@@ -46,6 +49,8 @@ body{
     border-radius:8px;
 
     font-weight:bold;
+
+    transition:.3s;
 }
 
 .btn:hover{
@@ -57,103 +62,82 @@ body{
     width:100%;
 
     border-radius:12px;
+
+    box-shadow:0 0 25px rgba(255,165,0,.4);
+}
+
+/* SERVICES SECTION */
+
 .services{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-
-    padding:80px 40px;
-
-    flex-wrap:wrap;
+    padding:100px 10%;
 
     background:#111;
-}
-
-.card{
-    background:#1a1a1a;
-
-    width:280px;
-
-    padding:25px;
-
-    border-radius:12px;
-
-    border:2px solid orange;
-
-    box-shadow:0 0 15px rgba(255,165,0,.25);
 
     text-align:center;
-
-    transition:.3s;
 }
 
-.card:hover{
-    transform:translateY(-5px);
-
-    box-shadow:0 0 25px rgba(255,165,0,.5);
-}
-
-.card h2{
+.services h2{
     color:orange;
+
+    font-size:3rem;
+
+    margin-bottom:50px;
 }
 
-.card p{
-    color:#cccccc;
-}
-
-.card h2{
-    color:orange;
-    margin-bottom:15px;
-}
-    
-.services {
-    padding: 100px 10%;
-    background: #111;
-    text-align: center;
-}
-
-.services h2 {
-    color: orange;
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-
-.service-grid {
-    display: grid;
+.service-grid{
+    display:grid;
 
     grid-template-columns:
-        repeat(auto-fit, minmax(250px, 1fr));
+        repeat(auto-fit,minmax(250px,1fr));
 
-    gap: 30px;
+    gap:30px;
 }
 
-.service-card {
-    background: #1a1a1a;
+.service-card{
+    background:#1a1a1a;
 
-    padding: 30px;
+    padding:30px;
 
-    border-radius: 15px;
+    border-radius:15px;
 
-    transition: 0.3s ease;
+    border:1px solid #333;
 
-    border: 1px solid #333;
+    transition:.3s ease;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
+.service-card:hover{
+    transform:translateY(-10px);
 
-    border-color: orange;
+    border-color:orange;
 
-    box-shadow: 0 0 20px rgba(255,165,0,.5);
+    box-shadow:0 0 20px rgba(255,165,0,.5);
 }
 
-.service-card h3 {
-    color: orange;
-    margin-bottom: 15px;
+.service-card h3{
+    color:orange;
+
+    margin-bottom:15px;
 }
 
-.service-card p {
-    color: #ccc;
+.service-card p{
+    color:#ccc;
 }
-    box-shadow:0 0 25px rgba(255,165,0,.4);
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .hero{
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:3rem;
+    }
+
+    .flyer{
+        max-width:300px;
+    }
 }
