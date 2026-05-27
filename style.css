@@ -160,3 +160,36 @@ body{
 .contact-email a:hover{
     text-decoration:underline;
 }
+.service-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin:25px 0;
+}
+
+.service-tags span{
+    background:#1a1a1a;
+
+    color:orange;
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    border:2px solid orange;
+
+    box-shadow:
+        0 0 10px rgba(255,165,0,.25);
+
+    transition:.3s ease;
+}
+
+.service-tags span:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255,165,0,.5);
+}
