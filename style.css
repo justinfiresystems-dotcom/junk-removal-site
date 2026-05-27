@@ -263,3 +263,29 @@ body{
         font-size:3rem;
     }
 }
+/* PANDA IMAGE */
+
+.panda-peek{
+    position:absolute;
+
+    bottom:-90px;
+
+    right:10px;
+
+    transition:.4s ease;
+}
+
+.panda-peek img{
+    width:85px;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,165,0,.5));
+}
+
+.service-card:hover .panda-peek{
+    bottom:10px;
+
+    transform:
+        rotate(-10deg)
+        scale(1.05);
+}
