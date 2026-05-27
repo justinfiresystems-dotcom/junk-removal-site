@@ -173,6 +173,7 @@ body{
     border-color:orange;
 
     box-shadow:0 0 20px rgba(255,165,0,.5);
+    transform:translateY(-10px) scale(1.03);
 }
 
 .service-card h3{
