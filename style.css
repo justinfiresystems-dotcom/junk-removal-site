@@ -16,6 +16,8 @@ body{
     min-height:100vh;
 
     padding:40px;
+
+    flex-wrap:wrap;
 }
 
 .hero-text{
@@ -31,8 +33,9 @@ body{
 .hero-text p{
     font-size:1.2rem;
     line-height:1.6;
-    color:#ccc;
 }
+
+/* BUTTON */
 
 .btn{
     display:inline-block;
@@ -50,32 +53,81 @@ body{
 
     font-weight:bold;
 
-    transition:.3s;
+    transition:0.3s;
 }
 
 .btn:hover{
     background:orange;
 }
 
+/* CONTACT INFO */
+
+.contact-email{
+    margin-top:25px;
+
+    font-size:1.8rem;
+}
+
+.contact-email a{
+    color:orange;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.contact-email a:hover{
+    color:#ffcc66;
+}
+
+.contact-phone{
+    margin-top:15px;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:orange;
+}
+
+/* FLYER */
+
 .flyer{
-    max-width:400px;
+    max-width:550px;
     width:100%;
 
     border-radius:12px;
+
     box-shadow:0 0 25px rgba(255,165,0,.4);
 }
 
-.services{
+/* SERVICE TAGS */
+
+.service-tags{
     display:flex;
-    justify-content:center;
-    gap:30px;
-
-    padding:80px 40px;
-
     flex-wrap:wrap;
 
-    background:#111;
+    gap:12px;
+
+    margin:25px 0;
 }
+
+.service-tags span{
+    background:#1a1a1a;
+
+    color:orange;
+
+    border:2px solid orange;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    font-weight:bold;
+
+    box-shadow:0 0 12px rgba(255,165,0,.35);
+}
+
 /* SERVICES SECTION */
 
 .services{
@@ -112,7 +164,7 @@ body{
 
     border:1px solid #333;
 
-    transition:.3s ease;
+    transition:0.3s ease;
 }
 
 .service-card:hover{
@@ -131,75 +183,4 @@ body{
 
 .service-card p{
     color:#ccc;
-}
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-    .hero{
-        flex-direction:column;
-
-        text-align:center;
-    }
-
-    .hero-text h1{
-        font-size:3rem;
-    }
-
-    .flyer{
-        max-width:300px;
-    }
-}
-.contact-email{
-    margin-top:20px;
-
-    font-size:1.1rem;
-
-    color:#ccc;
-}
-
-.contact-email a{
-    color:orange;
-
-    text-decoration:none;
-
-    font-weight:bold;
-}
-
-.contact-email a:hover{
-    text-decoration:underline;
-}
-.service-tags{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-
-    margin:25px 0;
-}
-
-.service-tags span{
-    background:#1a1a1a;
-
-    color:orange;
-
-    padding:12px 18px;
-
-    border-radius:30px;
-
-    font-weight:bold;
-
-    border:2px solid orange;
-
-    box-shadow:
-        0 0 10px rgba(255,165,0,.25);
-
-    transition:.3s ease;
-}
-
-.service-tags span:hover{
-    transform:translateY(-3px);
-
-    box-shadow:
-        0 0 20px rgba(255,165,0,.5);
 }
