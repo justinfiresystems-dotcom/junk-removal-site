@@ -184,3 +184,26 @@ body{
 .service-card p{
     color:#ccc;
 }
+/* PANDA PEEK EFFECT */
+
+.service-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.panda-peek{
+    position:absolute;
+
+    bottom:-60px;
+    right:15px;
+
+    font-size:3rem;
+
+    transition:0.4s ease;
+}
+
+.service-card:hover .panda-peek{
+    bottom:10px;
+
+    transform:rotate(-10deg);
+}
