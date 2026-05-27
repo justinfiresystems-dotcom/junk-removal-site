@@ -231,15 +231,35 @@ body{
 .panda-peek{
     position:absolute;
 
-    bottom:-70px;
+    bottom:-20px;
 
-    right:15px;
+    right:10px;
 
-    font-size:4rem;
+    opacity:0;
 
-    transition:.4s ease;
+    transition:all .4s ease;
+
+    z-index:5;
 }
 
+.panda-peek img{
+    width:80px;
+
+    display:block;
+
+    filter:
+        drop-shadow(0 0 10px rgba(255,165,0,.5));
+}
+
+.service-card:hover .panda-peek{
+    bottom:10px;
+
+    opacity:1;
+
+    transform:
+        rotate(-10deg)
+        scale(1.05);
+}
 .service-card:hover .panda-peek{
     bottom:10px;
 
