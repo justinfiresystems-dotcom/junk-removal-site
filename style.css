@@ -62,10 +62,20 @@ body{
     width:100%;
 
     border-radius:12px;
-
     box-shadow:0 0 25px rgba(255,165,0,.4);
 }
 
+.services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    padding:80px 40px;
+
+    flex-wrap:wrap;
+
+    background:#111;
+}
 /* SERVICES SECTION */
 
 .services{
