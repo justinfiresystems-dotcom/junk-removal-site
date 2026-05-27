@@ -309,3 +309,30 @@ body{
         rotate(-10deg)
         scale(1.05);
 }
+/* TRUCK PEEK EFFECT */
+
+.truck-peek{
+    position:absolute;
+
+    bottom:-50px;
+
+    right:15px;
+
+    font-size:3.5rem;
+
+    opacity:0;
+
+    transition:all .4s ease;
+
+    z-index:5;
+}
+
+.service-card:hover .truck-peek{
+    bottom:10px;
+
+    opacity:1;
+
+    transform:
+        rotate(-5deg)
+        scale(1.05);
+}
