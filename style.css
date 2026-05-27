@@ -372,3 +372,6 @@ body{
             rotate(0deg);
     }
 }
+.service-card {
+    height: auto;
+}
